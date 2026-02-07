@@ -1,0 +1,39 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Simonetta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Simonetta Regular'), local('Simonetta-Regular'), url(https://web.archive.org/web/20200226201613im_/https://fonts.gstatic.com/s/simonetta/v10/x3dickHVYrCU5BU15c4xdfoDjy8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Simonetta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Simonetta Regular'), local('Simonetta-Regular'), url(https://web.archive.org/web/20200226201613im_/https://fonts.gstatic.com/s/simonetta/v10/x3dickHVYrCU5BU15c4xe_oD.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*
+     FILE ARCHIVED ON 20:16:13 Feb 26, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:16:53 Feb 06, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.574
+  exclusion.robots: 0.02
+  exclusion.robots.policy: 0.01
+  esindex: 0.011
+  cdx.remote: 8.714
+  LoadShardBlock: 263.637 (3)
+  PetaboxLoader3.datanode: 374.719 (4)
+  load_resource: 1059.211
+  PetaboxLoader3.resolve: 588.928
+*/

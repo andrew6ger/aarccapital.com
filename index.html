@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AARC Capital | Volatility-Driven Investing</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="finance, quant, volatility, options, risk management">
+    <meta name="description" content="AARC Capital: systematic volatility investing with risk-first portfolio design.">
+    <meta name="author" content="AARC Capital">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="color-scheme" content="light dark">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://code.jquery.com">
+
+    <link rel="shortcut icon" href="/assets/img/favicon/AARCLogo256x256_black_transparent.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon/AARCLogo64.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="/assets/img/favicon/AARCLogo64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="/assets/img/favicon/AARCLogo128.png">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/Theme/rs-plugin/css/settings.min.css" media="screen"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/css/Content/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Simonetta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/Theme/css/icons-fonts.css">
+    <link rel="stylesheet" href="/assets/css/Content/style.css">
+    <link rel="stylesheet" href="/assets/css/Theme/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/Content/login.css">
+    <style>
+        body.aarcContent,
+        .grey-bg,
+        .page-section,
+        .content-wrapper {
+            background: #ffffff;
+        }
+        .page-section,
+        .content-wrapper {
+            color: #1f2a3a;
+        }
+        .page-section h1,
+        .page-section h2,
+        .page-section h3,
+        .page-section h4,
+        .page-section h5,
+        .page-section h6 {
+            color: #0f1a2b;
+        }
+        .page-section p,
+        .page-section li,
+        .page-section span {
+            color: #2a3b55;
+        }
+        .page-section a {
+            color: #1b4f9c;
+        }
+        .page-section a:hover {
+            color: #0f3c7a;
+        }
+        .quote p {
+            color: #1f2a3a;
+        }
+        .quote footer {
+            color: #3a4f6b;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 16px;
+            object-fit: cover;
+            object-position: center 20%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        .team-member h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+            color: #222222;
+        }
+        .team-member p {
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 5px 0;
+            color: #555555;
+        }
+        .logo-2 a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-2 .logo-text {
+            font-family: inherit;
+            font-size: 16px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #ffffff;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body class="aarcContent">
+    <div id="loader-overflow">
+        <div id="loader3">Please enable JS</div>
+    </div>
+
+    <div id="wrap" class="boxed">
+        <div class="grey-bg">
+            <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
+                <div class="aarcheader-wrapper">
+                    <div class="container-m-30 clearfix">
+                        <div class="logo-row">
+                            <div class="logo-container-2">
+                                <div class="logo-2">
+                                    <a href="/aarccapital/index.html" class="clearfix">
+                                        <img src="/assets/img/favicon/AARCLogo256x256_white_transparent.png" class="logo-img" alt="AARC Capital">
+                                        <span class="logo-text">AARC Capital</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu-btn-respons-container">
+                                <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target="#main-menu .navbar-collapse">
+                                    <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-menu-container">
+                        <div class="container-m-30 clearfix">
+                            <div id="main-menu">
+                                <div class="navbar navbar-default" role="navigation">
+                                    <nav class="collapse collapsing navbar-collapse right-1024">
+                                        <ul class="nav navbar-nav">
+                                            <li class="parent">
+                                                <a href="#home"><div class="main-menu-title">HOME</div></a>
+                                            </li>
+                                            <li class="parent">
+                                                <a href="#about"><div class="main-menu-title">ABOUT</div></a>
+                                            </li>
+                                            <li class="parent">
+                                                <a href="#method"><div class="main-menu-title">METHOD</div></a>
+                                            </li>
+                                            <li class="parent">
+                                                <a href="#tools"><div class="main-menu-title">TOOLS</div></a>
+                                            </li>
+                                            <li class="parent">
+                                                <a href="#contact"><div class="main-menu-title">CONTACT</div></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section id="home" class="content-wrapper main-content clear-fix">
+                <div class="sm-img-bg-fullscr parallax-section" style="background-image: url(/assets/img/turini1920.png);" data-stellar-background-ratio="0.5">
+                    <div class="container sm-content-cont text-center js-height-fullscr">
+                        <div class="sm-cont-middle">
+                            <div class="opacity-scroll2">
+                                <div class="font-white light-72-wide sm-mb-15 sm-mt-20" style="font-family: Simonetta">
+                                    AARC CAPITAL
+                                </div>
+                                <div class="font-white norm-16-wide hide-0-736 sm-mb-20">
+                                    RISK FIRST<span class="slash-divider-10">/</span>RETURNS SECOND<span class="slash-divider-10">/</span>COMPOUNDING ALWAYS
+                                </div>
+                                <div class="center-0-478" style="color: #cccccc">
+                                    A systematic equity and options approach aiming for equity-like returns with lower volatility.<br/>
+                                    Developed in-house with support from our partners.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="local-scroll-cont font-white">
+                        <a href="#about" class="scroll-down smooth-scroll">
+                            <div class="icon icon-arrows-down"></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div id="about" class="page-section p-110-cont">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 pb-40">
+                            <h3><span class="bold">ABOUT AARC CAPITAL</span></h3>
+                            <blockquote class="quote mb-0 pr-50-min-1169">
+                                <p>We blend AARC Capital research with partner-informed portfolio optimization to reduce bias and manage risk.</p>
+                                <footer>AARC Capital</footer>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn">
+                                        <h3>RISK FIRST</h3>
+                                        <p>Drawdown control, volatility budgeting, and hedged exposures drive portfolio construction.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="200ms">
+                                        <h3>SYSTEMATIC</h3>
+                                        <p>Rule-based signals and disciplined rebalancing help remove behavioral noise.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="400ms">
+                                        <h3>VOLATILITY DRIVEN</h3>
+                                        <p>We use options and derivatives to dynamically adjust exposure and improve risk efficiency.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="600ms">
+                                        <h3>RESEARCH LED</h3>
+                                        <p>Ongoing research across regimes, stress tests, and scenario analysis supports portfolio design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 pt-40">
+                            <h3 class="mb-30"><span class="bold">OUR TEAM</span></h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6 team-member">
+                            <img src="/assets/img/team/andrew.png" class="team-member-image" alt="Andrew Bradley">
+                            <h3>Andrew Bradley</h3>
+                            <p>Founder &amp; Portfolio Research</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 team-member">
+                            <img src="/assets/img/team/anthony.png" class="team-member-image" alt="Anthony Monaghan">
+                            <h3>Anthony Monaghan</h3>
+                            <p>Quant Research &amp; Optimization</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 team-member">
+                            <img src="/assets/img/team/ronnie.png" class="team-member-image" alt="Ronnie Feher">
+                            <h3>Ronnie Feher</h3>
+                            <p>Engineering &amp; Data Systems</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 team-member">
+                            <img src="/assets/img/team/simon.png" class="team-member-image" alt="Simon Nevill">
+                            <h3>Simon Nevill</h3>
+                            <p>Investment Strategy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="method" class="page-section">
+                <div class="container fes4-cont">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-50">
+                                <h2 class="section-title"><span class="bold">METHOD</span></h2>
+                            </div>
+                            <p class="mb-50">AARC Capital integrates partner-informed volatility optimization into a repeatable investment process.</p>
+                        </div>
+                        <div class="col-md-7 col-lg-offset-1">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="fes4-box">
+                                        <div class="fes4-title-cont">
+                                            <div class="fes4-box-icon">
+                                                <div class="icon icon-basic-gear"></div>
+                                            </div>
+                                            <h3><span class="bold">SIMULATION ENGINE</span></h3>
+                                            <p>Monte Carlo frameworks model equity and options interactions across market scenarios.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="fes4-box">
+                                        <div class="fes4-title-cont">
+                                            <div class="fes4-box-icon">
+                                                <div class="icon icon-basic-shield"></div>
+                                            </div>
+                                            <h3><span class="bold">TAIL-RISK CONTROL</span></h3>
+                                            <p>CVaR optimization and downside modeling help protect against extreme losses.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="fes4-box">
+                                        <div class="fes4-title-cont">
+                                            <div class="fes4-box-icon">
+                                                <div class="icon icon-basic-spread"></div>
+                                            </div>
+                                            <h3><span class="bold">ENSEMBLE AI</span></h3>
+                                            <p>Multiple ML models aggregate signals across indicators, sentiment, and patterns.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="fes4-box">
+                                        <div class="fes4-title-cont">
+                                            <div class="fes4-box-icon">
+                                                <div class="icon icon-basic-target"></div>
+                                            </div>
+                                            <h3><span class="bold">VOLATILITY MODELING</span></h3>
+                                            <p>Stochastic volatility, skew, and correlation tracking adapt to regime shifts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="challenges" class="page-section p-110-cont">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 pb-40">
+                            <h3><span class="bold">INVESTMENT CHALLENGES</span></h3>
+                            <p>Traditional equity exposure can ignore volatility drag and leave risk visible only after losses occur.</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn">
+                                        <h3>DOWNSIDE PROTECTION</h3>
+                                        <p>Continuous volatility analysis with downside-focused controls.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="200ms">
+                                        <h3>DYNAMIC DERIVATIVES</h3>
+                                        <p>Options-based exposure adjustments to improve risk efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="400ms">
+                                        <h3>LIQUID ALTERNATIVE</h3>
+                                        <p>Equity-like exposure with daily liquidity and improved risk control.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="600ms">
+                                        <h3>CORE DIVERSIFIER</h3>
+                                        <p>Designed as a stabilizing allocation within broader portfolios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tools" class="page-section p-110-cont">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 pb-40">
+                            <h3><span class="bold">TOOLS</span></h3>
+                            <p>Professional-grade analytics support portfolio decisions and client transparency.</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn">
+                                        <h3>RISK DASHBOARD</h3>
+                                        <p>Portfolio drawdown, exposure, and volatility diagnostics in one view.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="200ms">
+                                        <h3>SCENARIO LAB</h3>
+                                        <p>Stress tests and historical shock analysis to validate resilience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="400ms">
+                                        <h3>OPTIONS ENGINE</h3>
+                                        <p>Pricing, optimization, and strategy diagnostics for overlay decisions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 pb-10">
+                                    <div class="fes5-box wow fadeIn" data-wow-delay="600ms">
+                                        <h3>ALLOCATION MODELS</h3>
+                                        <p>Optimizers that balance return targets against volatility budgets.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="page-section p-110-cont">
+                <div class="container text-center">
+                    <h2 class="section-title"><span class="bold">READY TO LEARN MORE</span></h2>
+                    <p class="mb-40">Request a discussion or a sample factsheet from AARC Capital.</p>
+                    <a class="button medium thin hover-dark" href="mailto:info@aarccapital.com">Contact AARC Capital</a>
+                </div>
+            </div>
+
+            <footer id="footer2" class="page-section pt-80 pb-50">
+                <div class="container"></div>
+            </footer>
+
+            <p id="back-top">
+                <a href="#" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/assets/bundles/haswell.js" defer></script>
+</body>
+</html>
